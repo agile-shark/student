@@ -1,0 +1,5 @@
+lnb.jsp:左边导航
+header.jsp:头部分
+footer.jsp:底部分
+dtd.jsp:导入了所需要的css和javascript
+dtd_main.jsp:同dtd.jsp一样

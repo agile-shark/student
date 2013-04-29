@@ -1,0 +1,37 @@
+@charset "utf-8";
+/* loginbox */
+.loginbox{ position:absolute; top:50%; left:50%; width:195px; margin:-65px 0 0 -97px;}
+.loginbox dl { overflow:hidden; height:100%; padding:10px 10px 5px 5px; width:180px; border-bottom:1px solid #2a2a2a; color:#111111;}
+.loginbox dt { float:left; margin-right:10px; font-weight:bold;}
+.loginbox dd { float:left;}
+.loginbox dd input{ border:none;}
+.loginbox p{ margin-top:15px; text-align:right;}
+
+/* main */
+.mainbox{ position:absolute; top:50%; left:50%; width:520px; min-height:370px; margin:-185px 0 0 -260px;}
+.mainbox ul{ overflow:hidden; height:100%; border-top:2px solid #e5e5e5; border-bottom:2px solid #e5e5e5;}
+.mainbox ul li{ float:left; width:260px; padding:20px 0 10px 0; border-bottom:2px solid #e5e5e5; text-align:center; background:url(/img/bg/bg_main.gif) no-repeat right 20px; text-indent:-5000px;}
+.mainbox ul li.li02,.mainbox ul li.li04,.mainbox ul li.li06,.mainbox ul li.li07{ background:none;}
+.mainbox ul li a{ display:block; height:58px;}
+
+.mainbox ul li.li01 a{ background:url(/img/content/img_main.gif) 87% 0 no-repeat;} 
+.mainbox ul li.li01 a:hover{ background:url(/img/content/img_main_on.gif) 87% 0 no-repeat;}
+
+.mainbox ul li.li02 a{ background:url(/img/content/img02_main.gif) 20% 0 no-repeat;}
+.mainbox ul li.li02 a:hover{ background:url(/img/content/img02_main_on.gif) 20% 0 no-repeat;}
+
+.mainbox ul li.li03 a{ background:url(/img/content/img03_main.gif) 80% 0 no-repeat;}
+.mainbox ul li.li03 a:hover{ background:url(/img/content/img03_main_on.gif) 80% 0 no-repeat;}
+
+.mainbox ul li.li04 a{ background:url(/img/content/img04_main.gif) 42% 0 no-repeat;}
+.mainbox ul li.li04 a:hover{ background:url(/img/content/img04_main_on.gif) 42% 0 no-repeat;}
+
+.mainbox ul li.li05 a{ background:url(/img/content/img05_main.gif) 80% 0 no-repeat;}
+.mainbox ul li.li05 a:hover{ background:url(/img/content/img05_main_on.gif) 80% 0 no-repeat;}
+
+.mainbox ul li.li06 a{ background:url(/img/content/img06_main.gif) 18% 0 no-repeat;}
+.mainbox ul li.li06 a:hover{ background:url(/img/content/img06_main_on.gif) 18% 0 no-repeat;}
+
+.mainbox ul li.li07{ width:520px; border-bottom:none;}
+.mainbox ul li.li07 a{ background:url(/img/content/img07_main.gif) 53% 0 no-repeat;}
+.mainbox ul li.li07 a:hover{ background:url(/img/content/img07_main_on.gif) 53% 0 no-repeat;}
