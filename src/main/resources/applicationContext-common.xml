@@ -23,26 +23,29 @@
 	</bean>
 	
 	<bean id="sessionFactory"
-		class="org.springframework.orm.hibernate3.LocalSessionFactoryBean">
-		<property name="dataSource">
-			<ref bean="dataSource" />
-		</property>
-		<property name="hibernateProperties">
-			<value>
-				hibernate.dialect=org.hibernate.dialect.MySQLDialect
-				hibernate.hbm2ddl.auto=update
-				hibernate.show_sql=false
-				hibernate.format_sql=true
-				<!-- hibernate.cache.use_second_level_cache=true hibernate.cache.use_query_cache=true 
-					hibernate.cache.provider_class=org.hibernate.cache.EhCacheProvider -->
-			</value>
-		</property>
-		<property name="mappingResources">
-			<list>
+			class="org.springframework.orm.hibernate3.LocalSessionFactoryBean">
+			<property name="dataSource">
+				<ref bean="dataSource" />
+			</property>
+			<property name="hibernateProperties">
+				<value>
+		       		hibernate.dialect=org.hibernate.dialect.MySQLDialect
+			        hibernate.hbm2ddl.auto=update
+			        hibernate.show_sql=false
+			        hibernate.format_sql=true
+			        <!-- 
+			        hibernate.cache.use_second_level_cache=true
+					hibernate.cache.use_query_cache=true
+					hibernate.cache.provider_class=org.hibernate.cache.EhCacheProvider
+			         -->
+			     </value>
+			</property>
+			<property name="mappingResources">
+				<list>
 				<value>cn/edu/ccdx/student/model/Student.hbm.xml</value>
-			</list>
-		</property>
-	</bean>
+				</list>
+			</property>
+		</bean>
 	
 	<bean name="daoTemplate" abstract="true">
 		<property name="sessionFactory" ref="sessionFactory"></property>
