@@ -39,7 +39,7 @@
 		</property>
 		<property name="mappingResources">
 			<list>
-				<value>cn/edu/ccdx/student/model/Student.hbm.xml</value>
+				<value>Student.hbm.xml</value>
 			</list>
 		</property>
 	</bean>
