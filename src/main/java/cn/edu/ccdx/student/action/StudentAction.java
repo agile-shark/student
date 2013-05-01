@@ -21,6 +21,7 @@ public class StudentAction extends ActionSupport{
 
 	private static final long serialVersionUID = 161441855327519610L;
 	private final static Logger LOG = Logger.getLogger(StudentAction.class);
+	
 	//用于分页的封装类
 	Pager pager = new Pager();
 	
@@ -40,14 +41,17 @@ public class StudentAction extends ActionSupport{
 	 * @throws IOException 
 	 */
 	public String login() throws IOException {
+		
 		LOG.info("进入了StudentAction的login处理函数了！");
 		HttpServletRequest request = ServletActionContext.getRequest();
 		String id = request.getParameter("uid");
 		String pwd = request.getParameter("pwd");
+		
 		//标准写法，学会（以后就这样写）
 		if (null != id && null != pwd && !"".equals(id) && !"".equals(pwd)) {
+			
 			Student member = studentService.login(id, pwd);
-			System.out.println("进入了StudentAction的login处理函数的if判断语句了！");
+			LOG.info("进入了StudentAction的login处理函数的if判断语句了！");
 			if (null != member) {
 				String studentName = member.getStudent_name();
 				Map session = ActionContext.getContext().getSession();

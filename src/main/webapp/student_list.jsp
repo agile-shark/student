@@ -53,8 +53,8 @@ $(function(){
    	<s:iterator value="#request.list">
    	<tr align="center" height="36px"><td><input type="checkbox" name="ids"  value="<s:property value="student_id"/>" /></td><td><%=number-- %></td> <td><s:property value="student_name"/></td> <td><s:property value="student_pwd"/></td> <td><s:property value="student_sex"/></td> <td><s:property value="student_birthday"/></td> 
    	<td>
-   	<a href="/deleteStudentAction.do?id=<s:property value="student_id"/>"  onclick="return window.confirm('是否真的要删除该用户!')">删除
-   	</a> &nbsp;<a href="/toUpdateStudentAction.do?id=<s:property value="student_id"/>">更新</a></td></tr>
+   	<a href="deleteStudentAction.do?id=<s:property value="student_id"/>"  onclick="return window.confirm('是否真的要删除该用户!')">删除
+   	</a> &nbsp;<a href="toUpdateStudentAction.do?id=<s:property value="student_id"/>">更新</a></td></tr>
    	</s:iterator>
    </table>
   </form>
@@ -89,7 +89,7 @@ $(function(){
 		<a href="<s:property value="#attr.pageUrl"/>" id="lastP"><img src="/img/btn/btn04_paging.gif" alt="" /></a>
 	</pg:last>
   </pg:pager>
-    <a href="/student_add.jsp">添加</a> &nbsp;&nbsp;&nbsp;<a href="javascript:document.forms[0].submit();"  onclick="return window.confirm('是否真的要删除此商品!')">删除</a>
+    <a href="student_add.jsp">添加</a> &nbsp;&nbsp;&nbsp;<a href="javascript:document.forms[0].submit();"  onclick="return window.confirm('是否真的要删除此商品!')">删除</a>
     </center>
   </body>
 </html>

@@ -1,9 +1,6 @@
 package cn.edu.ccdx.student.dao.impl;
 
 import java.io.Serializable;
-import java.sql.CallableStatement;
-import java.sql.Connection;
-import java.sql.SQLException;
 import java.util.List;
 
 import org.springframework.dao.EmptyResultDataAccessException;
