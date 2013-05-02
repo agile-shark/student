@@ -59,16 +59,16 @@
     	<version>3.2.2.RELEASE</version>
     </dependency>
     <!-- database -->
-<!--     <dependency>
+	<dependency>
     	<groupId>mysql</groupId>
     	<artifactId>mysql-connector-java</artifactId>
     	<version>5.1.24</version>
-    </dependency> -->
-    <dependency>
+    </dependency>
+<!--     <dependency>
 	   <groupId>com.oracle</groupId>
 	   <artifactId>ojdbc14</artifactId>
 	   <version>10.2.0.1.0</version>
-	 </dependency>
+	 </dependency> -->
     <!-- struts-spring -->
     <dependency>
     	<groupId>org.apache.struts</groupId>
